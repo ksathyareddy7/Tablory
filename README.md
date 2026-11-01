@@ -2,11 +2,8 @@
   <img src="showcase/brag.jpg" alt="Tablory" width="720" />
 </p>
 
-<p align="center">
-  <video src="showcase/brag.mp4" poster="showcase/brag.jpg" controls width="720">
-    <a href="showcase/brag.mp4">Watch the Tablory demo</a>
-  </video>
-</p>
+<video src="showcase/brag.mp4" poster="showcase/brag.jpg" controls width="720">
+</video>
 
 # Tablory
 
