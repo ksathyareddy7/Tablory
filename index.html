@@ -37,8 +37,16 @@
           "Segoe UI Emoji";
         color: var(--text);
         background:
-          radial-gradient(1200px 800px at 70% 10%, rgba(37, 99, 235, 0.22), transparent 55%),
-          radial-gradient(900px 600px at 20% 40%, rgba(37, 99, 235, 0.12), transparent 55%),
+          radial-gradient(
+            1200px 800px at 70% 10%,
+            rgba(37, 99, 235, 0.22),
+            transparent 55%
+          ),
+          radial-gradient(
+            900px 600px at 20% 40%,
+            rgba(37, 99, 235, 0.12),
+            transparent 55%
+          ),
           var(--bg);
         min-height: 100vh;
       }
@@ -84,7 +92,11 @@
         font-size: 13px;
       }
       a.pill {
-        background: linear-gradient(180deg, rgba(37, 99, 235, 0.92), rgba(29, 78, 216, 0.92));
+        background: linear-gradient(
+          180deg,
+          rgba(37, 99, 235, 0.92),
+          rgba(29, 78, 216, 0.92)
+        );
         color: var(--text);
         border: 0;
       }
@@ -136,7 +148,10 @@
         font-weight: 800;
         font-size: 14px;
         color: var(--text);
-        transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+        transition:
+          transform 120ms ease,
+          background 120ms ease,
+          border-color 120ms ease;
       }
       .btn:hover {
         background: var(--card);
@@ -144,11 +159,19 @@
       }
       .btn.primary {
         border-color: rgba(37, 99, 235, 0.45);
-        background: linear-gradient(180deg, rgba(37, 99, 235, 0.92), rgba(29, 78, 216, 0.92));
+        background: linear-gradient(
+          180deg,
+          rgba(37, 99, 235, 0.92),
+          rgba(29, 78, 216, 0.92)
+        );
         box-shadow: 0 14px 40px rgba(37, 99, 235, 0.22);
       }
       .btn.primary:hover {
-        background: linear-gradient(180deg, rgba(37, 99, 235, 1), rgba(29, 78, 216, 1));
+        background: linear-gradient(
+          180deg,
+          rgba(37, 99, 235, 1),
+          rgba(29, 78, 216, 1)
+        );
       }
       .card {
         border: 1px solid var(--border);
@@ -163,7 +186,7 @@
         gap: 12px;
       }
       .kpi {
-        border: 1px solid rgba(255, 255, 255, 0.10);
+        border: 1px solid rgba(255, 255, 255, 0.1);
         background: rgba(0, 0, 0, 0.18);
         border-radius: 14px;
         padding: 14px;
@@ -209,43 +232,64 @@
     <div class="container">
       <div class="topbar">
         <div class="brand">
-          <img src="../showcase/tablory.svg" alt="Tablory" />
+          <img src="assets/tablory.svg" alt="Tablory" />
           <span>Tablory</span>
         </div>
-        <a class="pill" href="./SCREENS.html" aria-label="Screens and feature tour">
+        <a
+          class="pill"
+          href="./screens.html"
+          aria-label="Screens and feature tour"
+        >
           Screens & Features
         </a>
       </div>
 
       <div class="hero">
         <div>
-          <p class="pill" style="margin:0; width: fit-content;">Run locally • Postgres-backed • Open source</p>
-          <h1 class="h1" style="margin-top: 16px;">Every query tells a story.</h1>
+          <p class="pill" style="margin: 0; width: fit-content">
+            Run locally • Postgres-backed • Open source
+          </p>
+          <h1 class="h1" style="margin-top: 16px">
+            Every query tells a story.
+          </h1>
           <p class="sub">
-            Tablory is a full-stack SQL practice platform: challenges, lessons, tracks,
-            mock interviews, and achievements — all running locally on PostgreSQL.
+            Tablory is a full-stack SQL practice platform: challenges, lessons,
+            tracks, mock interviews, and achievements — all running locally on
+            PostgreSQL.
           </p>
           <div class="actions">
-            <a class="btn primary" href="https://github.com/ksathyareddy7/SQL-Arena" target="_blank" rel="noreferrer">
+            <a
+              class="btn primary"
+              href="https://github.com/ksathyareddy7/Tablory"
+              target="_blank"
+              rel="noreferrer"
+            >
               View on GitHub
             </a>
-            <a class="btn" href="https://github.com/ksathyareddy7/SQL-Arena#quickstart" target="_blank" rel="noreferrer">
+            <a
+              class="btn"
+              href="https://github.com/ksathyareddy7/Tablory#quickstart"
+              target="_blank"
+              rel="noreferrer"
+            >
               Quickstart
-            </a>
-            <a class="btn" href="https://github.com/ksathyareddy7/SQL-Arena/blob/main/SCREENS.md" target="_blank" rel="noreferrer">
-              Screens doc
             </a>
           </div>
         </div>
       </div>
 
       <div class="showcase">
-        <video src="../showcase/brag.mp4" poster="../showcase/brag.jpg" controls playsinline>
-          <a href="../showcase/brag.mp4">Watch the Tablory demo</a>
+        <video
+          src="assets/brag.mp4"
+          poster="assets/brag.jpg"
+          controls
+          playsinline
+        >
+          <a href="assets/brag.mp4">Watch the Tablory demo</a>
         </video>
       </div>
 
-      <div class="card" style="margin-top: 18px;">
+      <div class="card" style="margin-top: 18px">
         <div class="kpiGrid">
           <div class="kpi">
             <div class="label">Modes</div>
@@ -277,9 +321,7 @@
         </div>
       </div>
 
-      <div class="footer">
-        Built for learning. Run everything locally.
-      </div>
+      <div class="footer">Built for learning. Run everything locally.</div>
     </div>
   </body>
 </html>

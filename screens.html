@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablory screens</title>
+    <meta
+      name="description"
+      content="What each Tablory screen is for: exercises, schema, solutions, lessons, mock interviews, and the dashboard."
+    />
+    <style>
+      :root {
+        --bg: #0b1220;
+        --card: rgba(255, 255, 255, 0.06);
+        --card2: rgba(255, 255, 255, 0.04);
+        --border: rgba(255, 255, 255, 0.12);
+        --text: rgba(255, 255, 255, 0.92);
+        --muted: rgba(255, 255, 255, 0.66);
+        --blue: #2563eb;
+        --blue2: #1d4ed8;
+        --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          "Apple Color Emoji",
+          "Segoe UI Emoji";
+        color: var(--text);
+        background:
+          radial-gradient(
+            1200px 800px at 70% 10%,
+            rgba(37, 99, 235, 0.22),
+            transparent 55%
+          ),
+          radial-gradient(
+            900px 600px at 20% 40%,
+            rgba(37, 99, 235, 0.12),
+            transparent 55%
+          ),
+          var(--bg);
+        min-height: 100vh;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .container {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 48px 20px 64px;
+      }
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .brand img {
+        width: 60px;
+        height: 60px;
+      }
+      .brand span {
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: -0.02em;
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 14px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: var(--card2);
+        color: var(--muted);
+        font-weight: 700;
+        font-size: 13px;
+      }
+      a.pill {
+        background: linear-gradient(
+          180deg,
+          rgba(37, 99, 235, 0.92),
+          rgba(29, 78, 216, 0.92)
+        );
+        color: var(--text);
+        border: 0;
+      }
+      h1 {
+        font-size: 42px;
+        line-height: 1.05;
+        margin: 28px 0 0;
+        letter-spacing: -0.04em;
+      }
+      .sub {
+        margin: 14px 0 0;
+        font-size: 17px;
+        line-height: 1.55;
+        color: var(--muted);
+        max-width: 62ch;
+      }
+      .screen {
+        margin-top: 28px;
+      }
+      .screen img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 18px;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        background: #eef2ff;
+      }
+      .copy {
+        margin-top: 14px;
+      }
+      h2 {
+        margin: 0;
+        font-size: 20px;
+        letter-spacing: -0.02em;
+      }
+      p {
+        margin: 8px 0 0;
+        color: var(--muted);
+        line-height: 1.6;
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .footer {
+        margin-top: 34px;
+        color: rgba(255, 255, 255, 0.45);
+        font-size: 12px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <a class="brand" href="./index.html">
+          <img src="assets/tablory.svg" alt="Tablory" />
+          <span>Tablory</span>
+        </a>
+        <a class="pill" href="./index.html">Back to overview</a>
+      </div>
+
+      <h1>Screens and how to use them</h1>
+      <p class="sub">Use them in this order when you sit down to practice.</p>
+
+      <section class="screen">
+        <img
+          src="assets/exercise-list.png"
+          alt="Exercises list with search, status, difficulty, and app filters"
+        />
+        <div class="copy">
+          <h2>Exercises</h2>
+          <p>
+            Start here. Filter the bank by status, difficulty, app, or concept,
+            then open a question.
+          </p>
+        </div>
+      </section>
+
+      <section class="screen">
+        <img
+          src="assets/exercise-question.png"
+          alt="Exercise question with the SQL editor, expected output, and a passing run"
+        />
+        <div class="copy">
+          <h2>Question</h2>
+          <p>
+            Read the prompt, write SQL in the editor, and run it against the
+            real schema. Submit when the result matches.
+          </p>
+        </div>
+      </section>
+
+      <section class="screen">
+        <img
+          src="assets/exercise-schema.png"
+          alt="Schema explorer showing the users table next to the SQL editor"
+        />
+        <div class="copy">
+          <h2>Schema</h2>
+          <p>
+            Open Schema before you guess table names. Check columns, types, and
+            relationships, or switch to Mermaid.
+          </p>
+        </div>
+      </section>
+
+      <section class="screen">
+        <img
+          src="assets/exercise-solutions.png"
+          alt="Solutions tab with alternate queries and an explanation"
+        />
+        <div class="copy">
+          <h2>Solutions</h2>
+          <p>
+            After a solve, compare approaches. Read the explanation, then copy a
+            snippet if you want to study the pattern.
+          </p>
+        </div>
+      </section>
+
+      <section class="screen">
+        <img
+          src="assets/learning-tracks.png"
+          alt="Learning tracks with lesson counts and progress"
+        />
+        <div class="copy">
+          <h2>Learning tracks</h2>
+          <p>
+            Pick a path for your goal. Lessons can sit on more than one track,
+            and progress carries across them.
+          </p>
+        </div>
+      </section>
+
+      <section class="screen">
+        <img
+          src="assets/learning-lesson.png"
+          alt="A lesson page with the track outline and SELECT basics content"
+        />
+        <div class="copy">
+          <h2>Lesson</h2>
+          <p>
+            Read the concept, keep the track outline beside you, and mark the
+            lesson as you go. Examples use the same schemas as the exercises.
+          </p>
+        </div>
+      </section>
+
+      <section class="screen">
+        <img
+          src="assets/mock-interviews.png"
+          alt="Mock interview templates with time limits and start buttons"
+        />
+        <div class="copy">
+          <h2>Mock interview</h2>
+          <p>
+            Start a timed round. Solutions and AI prompts stay locked until the
+            session ends. View History shows past rounds.
+          </p>
+        </div>
+      </section>
+
+      <section class="screen">
+        <img
+          src="assets/dashboard.png"
+          alt="Dashboard with solved count, success rate, badges, and submission activity"
+        />
+        <div class="copy">
+          <h2>Dashboard</h2>
+          <p>
+            Check solved, attempts, and success rate. Badges and the activity
+            grid show what you have already earned.
+          </p>
+        </div>
+      </section>
+
+      <div class="footer">Built for learning. Run everything locally.</div>
+    </div>
+  </body>
+</html>
