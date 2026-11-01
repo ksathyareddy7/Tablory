@@ -1,9 +1,11 @@
-<p align="center">
-  <img src="showcase/brag.jpg" alt="Tablory" width="720" />
-</p>
+<img width="1920" height="1080" alt="brag" src="https://github.com/user-attachments/assets/844eb36e-6e97-40f2-98b6-2fd9fbc54edd" />
 
-<video src="showcase/brag.mp4" poster="showcase/brag.jpg" controls width="720">
-</video>
+
+
+
+https://github.com/user-attachments/assets/adda5dc4-d307-449f-ae86-024ce6dcc773
+
+
 
 # Tablory
 
